@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.eonml</groupId>
     <artifactId>freemarker-excel</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.1</version>
     <name>freemarker-excel</name>
     <description>Freemarker-Excel</description>
     <url>https://github.com/yongjiu8/freemarker-excel</url>
@@ -18,7 +17,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.13.RELEASE</version>
-        <relativePath/>
+        <relativePath />
     </parent>
 
     <licenses>
@@ -32,7 +31,8 @@
         <connection>scm:git:git://github.com/yongjiu8/freemarker-excel.git</connection>
         <developerConnection>scm:git:ssh://github.com:yongjiu8/freemarker-excel.git</developerConnection>
         <url>https://github.com/yongjiu8/freemarker-excel</url>
-    </scm>
+      <tag>freemarker-excel-0.1.1</tag>
+  </scm>
 
     <developers>
         <developer>
