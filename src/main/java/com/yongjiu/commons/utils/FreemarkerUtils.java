@@ -35,10 +35,10 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
- * @author 大脑补丁
- * @project freemarker-excel
- * @description: freemarker工具类
- * @create 2020-04-14 09:43
+ * author 大脑补丁
+ * project freemarker-excel
+ * description: freemarker工具类
+ * create 2020-04-14 09:43
  */
 public class FreemarkerUtils {
 
@@ -93,9 +93,9 @@ public class FreemarkerUtils {
 	/**
 	 * 导出到文件中（导出到硬盘，xls格式）
 	 *
-	 * @param excelFilePath
-	 * @param freemarkerInput
-	 * @author XuChao on 2021-04-14 15:34
+	 * param excelFilePath
+	 * param freemarkerInput
+	 * author XuChao on 2021-04-14 15:34
 	 */
 	public static void exportImageExcel(String excelFilePath, FreemarkerInput freemarkerInput) {
 		try {
@@ -115,9 +115,9 @@ public class FreemarkerUtils {
 	/**
 	 * 导出到文件中（导出到硬盘，xlsx格式）
 	 *
-	 * @param excelFilePath
-	 * @param freemarkerInput
-	 * @author XuChao on 2021-06-25 23:34
+	 * param excelFilePath
+	 * param freemarkerInput
+	 * author XuChao on 2021-06-25 23:34
 	 */
 	public static void exportImageExcelNew(String excelFilePath, FreemarkerInput freemarkerInput) {
 		try {
@@ -137,8 +137,8 @@ public class FreemarkerUtils {
 	/**
 	 * 导出到response输出流中(用于浏览器调用接口,支持Excel2007版，xlsx格式)
 	 *
-	 * @param response
-	 * @param freemarkerInput
+	 * param response
+	 * param freemarkerInput
 	 */
 	public static void exportImageExcelNew(HttpServletResponse response, FreemarkerInput freemarkerInput) {
 		try {
@@ -161,9 +161,9 @@ public class FreemarkerUtils {
 	/**
 	 * 导出到response输出流中(用于浏览器调用接口,支持Excel2003版，xls格式)
 	 *
-	 * @param response
-	 * @param freemarkerInput
-	 * @author XuChao on 2021-06-25 23:34
+	 * param response
+	 * param freemarkerInput
+	 * author XuChao on 2021-06-25 23:34
 	 */
 	public static void exportImageExcel(HttpServletResponse response, FreemarkerInput freemarkerInput) {
 		try {

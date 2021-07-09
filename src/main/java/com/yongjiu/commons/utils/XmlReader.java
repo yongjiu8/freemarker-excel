@@ -9,10 +9,10 @@ import org.springframework.util.ObjectUtils;
 import java.util.*;
 
 /**
- * @author 大脑补丁
- * @project freemarker-excel
- * @description: 读取XML文件工具
- * @create 2020-04-21 08:58
+ * author yongjiu
+ * project freemarker-excel
+ * description: 读取XML文件工具
+ * create 2020-04-21 08:58
  */
 public class XmlReader {
 

@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 大脑补丁
- * @project freemarker-excel
- * @description: FreeMarker导出带图片的Excel需要的参数对象
- * @create 2020-04-14 14:21
+ * author yongjiu
+ * project freemarker-excel
+ * description: FreeMarker导出带图片的Excel需要的参数对象
+ * create 2020-04-14 14:21
  */
 @Data
 @SuppressWarnings("rawtypes")

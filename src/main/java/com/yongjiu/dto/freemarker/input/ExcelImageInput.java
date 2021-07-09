@@ -36,9 +36,9 @@ public class ExcelImageInput implements Serializable {
 	/**
 	 * Excel图片参数对象(xlsx版)
 	 *
-	 * @param imgPath
-	 * @param sheetIndex
-	 * @param anchorXlsx
+	 * param imgPath
+	 * param sheetIndex
+	 * param anchorXlsx
 	 */
 	public ExcelImageInput(String imgPath, Integer sheetIndex, XSSFClientAnchor anchorXlsx) {
 		this.imgPath = imgPath;
@@ -49,9 +49,9 @@ public class ExcelImageInput implements Serializable {
 	/**
 	 * Excel图片参数对象(xls版)
 	 *
-	 * @param imgPath
-	 * @param sheetIndex
-	 * @param anchorXls
+	 * param imgPath
+	 * param sheetIndex
+	 * param anchorXls
 	 */
 	public ExcelImageInput(String imgPath, Integer sheetIndex, HSSFClientAnchor anchorXls) {
 		this.imgPath = imgPath;

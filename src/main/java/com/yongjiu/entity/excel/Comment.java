@@ -4,9 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * @project cne-power-operation-web
- * @description: 单元格注释
- * @create: 2020-08-11 17:34
+ * project cne-power-operation-web
+ * description: 单元格注释
+ * create: 2020-08-11 17:34
  */
 @Getter
 @Setter
