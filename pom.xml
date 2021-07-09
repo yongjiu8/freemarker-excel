@@ -28,8 +28,8 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/yongjiu8/freemarker-excel.git</connection>
-        <developerConnection>scm:git:ssh://github.com:yongjiu8/freemarker-excel.git</developerConnection>
+        <connection>scm:git:https://github.com/yongjiu8/freemarker-excel.git</connection>
+        <developerConnection>scm:git:https://github.com/yongjiu8/freemarker-excel.git</developerConnection>
         <url>https://github.com/yongjiu8/freemarker-excel</url>
       <tag>freemarker-excel-0.1.1</tag>
   </scm>
