@@ -3,6 +3,14 @@
 
 version：0.0.1
 
+maven项目引入：
+
+    <dependency>
+      <groupId>cn.eonml</groupId>
+      <artifactId>freemarker-excel</artifactId>
+      <version>0.1.1</version>
+    </dependency>
+
 简单使用方法：
 使用office软件编写复杂模板 然后导出为xml
 将此xml文件 应用到freemarker模板里
@@ -12,15 +20,15 @@ version：0.0.1
 
 简单实示例：
 
-    FreemarkerInput freemarkerInput = new FreemarkerInput();
+    		FreemarkerInput freemarkerInput = new FreemarkerInput();
 
-    //设置freemarker模板
+    		//设置freemarker模板
 		freemarkerInput.setTemplateName("templates.ftl");
     
-    //设置map数据
+    		//设置map数据
 		freemarkerInput.setDataMap(getExcelData());
     
-    //缓存xml位置
+    		//缓存xml位置
 		freemarkerInput.setXmlTempFile("export/temp/");
     
 		freemarkerInput.setFileName("cache");
