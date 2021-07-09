@@ -190,7 +190,7 @@ public class FreemarkerUtils {
 		configuration.setTemplateUpdateDelayMilliseconds(0);
 		configuration.setEncoding(Locale.CHINA, "UTF-8");
 		configuration.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
-		configuration.setClassForTemplateLoading(FreemarkerUtils.class, "/templates" + filePath);
+		configuration.setClassForTemplateLoading(FreemarkerUtils.class,  filePath);
 		configuration.setOutputEncoding("UTF-8");
 		return configuration.getTemplate(templateName, "UTF-8");
 	}
