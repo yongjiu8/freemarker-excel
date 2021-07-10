@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.eonml</groupId>
     <artifactId>freemarker-excel</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.1-SNAPSHOT</version>
     <name>freemarker-excel</name>
     <description>Freemarker-Excel</description>
     <url>https://github.com/yongjiu8/freemarker-excel</url>
@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.3.RELEASE</version>
+        <version>2.5.2</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
@@ -77,7 +77,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>4.1.0</version>
+            <version>4.1.2</version>
         </dependency>
 
 
@@ -85,7 +85,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.1.0</version>
+            <version>4.1.2</version>
             <exclusions>
                 <exclusion>
                     <artifactId>poi</artifactId>
@@ -146,6 +146,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
