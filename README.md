@@ -48,6 +48,7 @@ maven项目引入：
 使用poi将xml数据导出到新的excel文件
 
 简单实示例：
+示例程序：https://github.com/yongjiu8/freemarker-excel-test/tree/master
 
     FreemarkerInput freemarkerInput = new FreemarkerInput();
         //设置freemarker模板路径
@@ -72,5 +73,4 @@ maven项目引入：
 
         //导出Excel到浏览器（Excel2007版及以上，xlsx格式）速度快
         FreemarkerUtils.exportImageExcelNew(HttpServletResponse , freemarkerInput);
-	
-    
+	 
