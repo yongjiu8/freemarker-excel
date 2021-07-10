@@ -805,7 +805,7 @@ public class FreemarkerUtils {
 				String color = style.getFont().getColor();
 
 				if (color == null) {
-					color = "#FFFFFF";
+					color = "#000000";
 				}
 
 				Integer[] rgb = ColorUtil.hex2Rgb(color);
@@ -862,7 +862,7 @@ public class FreemarkerUtils {
 					String color = style.getFont().getColor();
 
 					if (color == null) {
-						color = "#FFFFFF";
+						color = "#000000";
 					}
 
 					Integer[] rgb = ColorUtil.hex2Rgb(color);
@@ -904,7 +904,7 @@ public class FreemarkerUtils {
 				String color = style.getFont().getColor();
 
 				if (color == null) {
-					color = "#FFFFFF";
+					color = "#000000";
 				}
 
 				Integer[] rgb = ColorUtil.hex2Rgb(color);
@@ -960,7 +960,7 @@ public class FreemarkerUtils {
 					String color = style.getFont().getColor();
 
 					if (color == null) {
-						color = "#FFFFFF";
+						color = "#000000";
 					}
 
 					Integer[] rgb = ColorUtil.hex2Rgb(color);
