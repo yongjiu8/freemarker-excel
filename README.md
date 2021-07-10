@@ -45,7 +45,7 @@ maven项目引入：
     <dependency>
       <groupId>cn.eonml</groupId>
       <artifactId>freemarker-excel</artifactId>
-      <version>0.1.4</version>
+      <version>0.1.5</version>
     </dependency>
 
 简单使用方法：
