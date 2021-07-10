@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.eonml</groupId>
     <artifactId>freemarker-excel</artifactId>
-    <version>0.1.4-SNAPSHOT</version>
+    <version>0.1.4</version>
     <name>freemarker-excel</name>
     <description>Freemarker-Excel</description>
     <url>https://github.com/yongjiu8/freemarker-excel</url>
