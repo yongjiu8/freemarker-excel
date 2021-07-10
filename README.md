@@ -2,6 +2,14 @@
 
 利用freemarker模板导出复杂excel
 
+模板：
+
+<img src="https://img-blog.csdnimg.cn/20210710151651159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQyOTkyNjY=,size_16,color_FFFFFF,t_70" />
+
+结果：
+
+<img src="https://img-blog.csdnimg.cn/20210710155147455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQyOTkyNjY=,size_16,color_FFFFFF,t_70" />
+
 模板是什么样 导出的就是什么样
 
 不是xml重名xlsx版本
@@ -10,7 +18,7 @@
 
 office打开不会报错
 
-version：0.0.4
+version：0.1.5
 
 原作者：csdn 大脑补丁
 
@@ -20,7 +28,7 @@ version：0.0.4
 
 csdn：https://blog.csdn.net/u014299266
 
-v0.0.4
+v0.1.5
 
 1.修复读取xml异常
 
