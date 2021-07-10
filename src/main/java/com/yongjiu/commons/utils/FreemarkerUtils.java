@@ -227,13 +227,17 @@ public class FreemarkerUtils {
 				Table table = worksheet.getTable();
 				List<Row> rows = table.getRows();
 				List<Column> columns = table.getColumns();
-				// 填充列宽
-				int columnIndex = 0;
-				for (int i = 0; i < columns.size(); i++) {
-					Column column = columns.get(i);
-					columnIndex = getCellWidthIndex(columnIndex, i, column.getIndex());
-					sheet.setColumnWidth(columnIndex, (int) column.getWidth() * 50);
+
+				if (columns != null && columns.size() > 0) {
+					// 填充列宽
+					int columnIndex = 0;
+					for (int i = 0; i < columns.size(); i++) {
+						Column column = columns.get(i);
+						columnIndex = getCellWidthIndex(columnIndex, i, column.getIndex());
+						sheet.setColumnWidth(columnIndex, (int) column.getWidth() * 50);
+					}
 				}
+
 				int createRowIndex = 0;
 				List<CellRangeAddressEntity> cellRangeAddresses = new ArrayList<>();
 				for (int rowIndex = 0; rowIndex < rows.size(); rowIndex++) {
@@ -797,12 +801,22 @@ public class FreemarkerUtils {
 		if (cellInfo.getData() != null) {
 			XSSFFont font = wb.createFont();
 			if (style != null && style.getFont() != null) {
+
 				String color = style.getFont().getColor();
-				if ("#FF0000".equals(color)) {
-					font.setColor(IndexedColors.RED.getIndex());
-				} else if ("#000000".equals(color)) {
-					font.setColor(IndexedColors.BLACK.getIndex());
+
+				if (color == null) {
+					color = "#FFFFFF";
 				}
+
+				Integer[] rgb = ColorUtil.hex2Rgb(color);
+
+				HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+
+				HSSFPalette palette = hssfWorkbook.getCustomPalette();
+
+				HSSFColor paletteColor = palette.findSimilarColor(rgb[0],rgb[1],rgb[2]);
+
+				font.setColor(paletteColor.getIndex());
 			}
 			if (!ObjectUtils.isEmpty(cellInfo.getData().getType()) && "Number".equals(cellInfo.getData().getType())) {
 				cell.setCellType(CellType.NUMERIC);
@@ -844,20 +858,29 @@ public class FreemarkerUtils {
 
 			if (style != null) {
 				if (style.getNumberFormat() != null) {
+
 					String color = style.getFont().getColor();
-					if ("#FF0000".equals(color)) {
-						font.setColor(IndexedColors.RED.getIndex());
-					} else if ("#000000".equals(color)) {
-						font.setColor(IndexedColors.BLACK.getIndex());
+
+					if (color == null) {
+						color = "#FFFFFF";
 					}
+
+					Integer[] rgb = ColorUtil.hex2Rgb(color);
+
+					HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+
+					HSSFPalette palette = hssfWorkbook.getCustomPalette();
+
+					HSSFColor paletteColor = palette.findSimilarColor(rgb[0],rgb[1],rgb[2]);
+
+					font.setColor(paletteColor.getIndex());
+
 					if ("0%".equals(style.getNumberFormat().getFormat())) {
 						XSSFDataFormat format = wb.createDataFormat();
 						dataStyle.setDataFormat(format.getFormat(style.getNumberFormat().getFormat()));
 					} else {
 						dataStyle.setDataFormat(HSSFDataFormat.getBuiltinFormat("#,##0.00"));
 					}
-					// XSSFDataFormat format = wb.createDataFormat();
-					// dataStyle.setDataFormat(format.getFormat(style.getNumberFormat().getFormat()));
 				}
 			}
 			dataStyle.setFont(font);
@@ -879,11 +902,20 @@ public class FreemarkerUtils {
 			HSSFFont font = wb.createFont();
 			if (style != null && style.getFont() != null) {
 				String color = style.getFont().getColor();
-				if ("#FF0000".equals(color)) {
-					font.setColor(IndexedColors.RED.getIndex());
-				} else if ("#000000".equals(color)) {
-					font.setColor(IndexedColors.BLACK.getIndex());
+
+				if (color == null) {
+					color = "#FFFFFF";
 				}
+
+				Integer[] rgb = ColorUtil.hex2Rgb(color);
+
+				HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+
+				HSSFPalette palette = hssfWorkbook.getCustomPalette();
+
+				HSSFColor paletteColor = palette.findSimilarColor(rgb[0],rgb[1],rgb[2]);
+
+				font.setColor(paletteColor.getIndex());
 			}
 			if (!ObjectUtils.isEmpty(cellInfo.getData().getType()) && "Number".equals(cellInfo.getData().getType())) {
 				cell.setCellType(CellType.NUMERIC);
@@ -926,19 +958,28 @@ public class FreemarkerUtils {
 			if (style != null) {
 				if (style.getNumberFormat() != null) {
 					String color = style.getFont().getColor();
-					if ("#FF0000".equals(color)) {
-						font.setColor(IndexedColors.RED.getIndex());
-					} else if ("#000000".equals(color)) {
-						font.setColor(IndexedColors.BLACK.getIndex());
+
+					if (color == null) {
+						color = "#FFFFFF";
 					}
+
+					Integer[] rgb = ColorUtil.hex2Rgb(color);
+
+					HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+
+					HSSFPalette palette = hssfWorkbook.getCustomPalette();
+
+					HSSFColor paletteColor = palette.findSimilarColor(rgb[0],rgb[1],rgb[2]);
+
+					font.setColor(paletteColor.getIndex());
+
 					if ("0%".equals(style.getNumberFormat().getFormat())) {
 						HSSFDataFormat format = wb.createDataFormat();
 						dataStyle.setDataFormat(format.getFormat(style.getNumberFormat().getFormat()));
 					} else {
 						dataStyle.setDataFormat(HSSFDataFormat.getBuiltinFormat("#,##0.00"));
 					}
-					// HSSFDataFormat format = wb.createDataFormat();
-					// dataStyle.setDataFormat(format.getFormat(style.getNumberFormat().getFormat()));
+
 				}
 			}
 			dataStyle.setFont(font);
