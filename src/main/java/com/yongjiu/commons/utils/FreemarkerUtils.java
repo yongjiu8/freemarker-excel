@@ -147,7 +147,7 @@ public class FreemarkerUtils {
 			response.reset();
 			response.setContentType("application/msexcel;charset=UTF-8");
 			response.setHeader("Content-Disposition",
-					"attachment;filename=\"" + new String((freemarkerInput.getFileName() + ".xls").getBytes("GBK"),
+					"attachment;filename=\"" + new String((freemarkerInput.getFileName() + ".xlsx").getBytes("GBK"),
 							"ISO8859-1") + "\"");
 			response.setHeader("Response-Type", "Download");
 			createExcelToStream(freemarkerInput, outputStream);
