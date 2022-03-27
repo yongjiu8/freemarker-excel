@@ -40,12 +40,15 @@ v0.1.5
 
 5.添加文字颜色适配
 
+v0.1.6
+1.修复浏览器导出文件名后缀错误
+
 maven项目引入：
 
     <dependency>
       <groupId>cn.eonml</groupId>
       <artifactId>freemarker-excel</artifactId>
-      <version>0.1.5</version>
+      <version>0.1.6</version>
     </dependency>
 
 简单使用方法：
